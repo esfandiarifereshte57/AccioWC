@@ -5,50 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accio World Cup 2026</title>
     <style>
-        body {
+        * {
             margin: 0;
             padding: 0;
-            background: #0a0a0a;
+            box-sizing: border-box;
+        }
+        body {
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            font-family: sans-serif;
-            flex-direction: column;
-            gap: 20px;
+            padding: 20px;
         }
-        .loader {
-            width: 50px;
-            height: 50px;
-            border: 4px solid #333;
-            border-top: 4px solid #ffd700;
+        .container {
+            text-align: center;
+            max-width: 500px;
+            padding: 40px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 30px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,215,0,0.3);
+        }
+        .logo {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(145deg, #FFD966, #FFA500);
             border-radius: 50%;
-            animation: spin 1s linear infinite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 50px;
+            box-shadow: 0 0 30px rgba(255,215,0,0.3);
         }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+        h1 {
+            color: #FFD966;
+            font-size: 2rem;
+            margin-bottom: 10px;
         }
         p {
-            color: #ffd700;
-            font-size: 1.2rem;
+            color: #ccc;
+            margin-bottom: 30px;
+            line-height: 1.6;
         }
-        a {
-            color: #ffd700;
+        .btn {
+            display: inline-block;
+            background: linear-gradient(105deg, #FFD966, #FFA500);
+            color: #0a0a0a;
+            padding: 14px 40px;
+            border-radius: 50px;
             text-decoration: none;
-            background: #333;
-            padding: 10px 20px;
-            border-radius: 30px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(255,200,50,0.4);
+        }
+        .note {
+            font-size: 0.7rem;
+            color: #666;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <div class="loader"></div>
-    <p>در حال انتقال به سامانه آکسیو...</p>
-    <p style="font-size: 0.8rem; color: #888;">در صورت عدم انتقال، <a href="https://script.google.com/macros/s/AKfycbwL6gNPqoHWiQEBIrrwSoHXFxnIkqPhgd4qh4a9U7dIT1W7aONO202axsSNU3FILZ4n/exec">اینجا کلیک کنید</a></p>
-
-    <script>
-        window.location.href = "https://script.google.com/macros/s/AKfycbwL6gNPqoHWiQEBIrrwSoHXFxnIkqPhgd4qh4a9U7dIT1W7aONO202axsSNU3FILZ4n/exec";
-    </script>
+    <div class="container">
+        <div class="logo">
+            <span>⚽</span>
+        </div>
+        <h1>آکسیو · جام جهانی ۲۰۲۶</h1>
+        <p>سامانه پیش‌بینی مسابقات جام جهانی<br>با جایزه و رقابت لحظه‌ای</p>
+        <a href="https://script.google.com/macros/s/AKfycbwL6gNPqoHWiQEBIrrwSoHXFxnIkqPhgd4qh4a9U7dIT1W7aONO202axsSNU3FILZ4n/exec" class="btn">ورود به سامانه</a>
+        <div class="note">با کلیک روی دکمه وارد سامانه آکسیو می‌شوید</div>
+    </div>
 </body>
 </html>
