@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accio World Cup 2026</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #0a0a0a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: sans-serif;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .loader {
+            width: 50px;
+            height: 50px;
+            border: 4px solid #333;
+            border-top: 4px solid #ffd700;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        p {
+            color: #ffd700;
+            font-size: 1.2rem;
+        }
+        a {
+            color: #ffd700;
+            text-decoration: none;
+            background: #333;
+            padding: 10px 20px;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="loader"></div>
+    <p>در حال انتقال به سامانه آکسیو...</p>
+    <p style="font-size: 0.8rem; color: #888;">در صورت عدم انتقال، <a href="https://script.google.com/macros/s/AKfycbwL6gNPqoHWiQEBIrrwSoHXFxnIkqPhgd4qh4a9U7dIT1W7aONO202axsSNU3FILZ4n/exec">اینجا کلیک کنید</a></p>
+
+    <script>
+        window.location.href = "https://script.google.com/macros/s/AKfycbwL6gNPqoHWiQEBIrrwSoHXFxnIkqPhgd4qh4a9U7dIT1W7aONO202axsSNU3FILZ4n/exec";
+    </script>
+</body>
+</html>
